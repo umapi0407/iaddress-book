@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Contacts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-blue-600 p-4 text-white flex justify-between">
+      <h1 class="font-bold">iAddress Book</h1>
+      <div>
+        <a href="index.html" class="mr-3">Home</a>
+        <a href="add-contact.html" class="mr-3">Add Contact</a>
+        <a href="contacts.html" class="mr-3">Contact List</a>
+        <a href="about.html" class="mr-3">About</a>
+        <button onclick="logout()" class="bg-red-600 px-3 py-1 rounded text-white hover:bg-red-700">Logout</button>
+      </div>
+    </nav>
+
+    <div class="p-6">
+        <h2 class="text-2xl font-bold mb-4">Contact List</h2>
+    
+        <table class="w-full bg-white shadow rounded">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="p-2">Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="contactList"></tbody>
+        </table>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/contacts.js"></script>
+  </body>
+</html>
